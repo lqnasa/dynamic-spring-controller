@@ -281,15 +281,15 @@ private void registerControllerBeanDefinition(BeanDefinitionRegistry registry, C
 ```
 
 实测效果：
-![image](https://raw.githubusercontent.com/lqnasa/dynamic-spring-controller/tree/master/docs/images/image-20210424014829852.png)
+![image](https://raw.githubusercontent.com/lqnasa/dynamic-spring-controller/master/docs/images/image-20210424014829852.png)
 
 运行效果：
 
-![image](https://raw.githubusercontent.com/lqnasa/dynamic-spring-controller/tree/master/docs/images/image-20210424015845156.png)
+![image](https://raw.githubusercontent.com/lqnasa/dynamic-spring-controller/master/docs/images/image-20210424015845156.png)
 
 
 
-![image](https://raw.githubusercontent.com/lqnasa/dynamic-spring-controller/tree/master/docs/images/image-20210424015111208.png)
+![image](https://raw.githubusercontent.com/lqnasa/dynamic-spring-controller/master/docs/images/image-20210424015111208.png)
 
 ## 五、总结
 
