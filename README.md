@@ -281,7 +281,7 @@ private void registerControllerBeanDefinition(BeanDefinitionRegistry registry, C
 ```
 
 实测效果：
-<img src=https://github.com/lqnasa/dynamic-spring-controller/tree/master/docs/images/image-20210424014829852.png" alt="show"/>
+<img src="https://github.com/lqnasa/dynamic-spring-controller/tree/master/docs/images/image-20210424014829852.png" alt="show"/>
 ![image](https://github.com/lqnasa/dynamic-spring-controller/tree/master/docs/images/image-20210424014829852.png)
 
 运行效果：
