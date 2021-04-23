@@ -282,15 +282,15 @@ private void registerControllerBeanDefinition(BeanDefinitionRegistry registry, C
 
 实测效果：
 
-![image-20210424014829852](C:\Users\coderLee23\AppData\Roaming\Typora\typora-user-images\image-20210424014829852.png)
+![image-20210424014829852](https://github.com/lqnasa/dynamic-spring-controller/tree/master/docs/images/image-20210424014829852.png)
 
 运行效果：
 
-![image-20210424015845156](C:\Users\coderLee23\AppData\Roaming\Typora\typora-user-images\image-20210424015845156.png)
+![image-20210424015845156](https://github.com/lqnasa/dynamic-spring-controller/tree/master/docs/images/image-20210424015845156.png)
 
 
 
-![image-20210424015111208](C:\Users\coderLee23\AppData\Roaming\Typora\typora-user-images\image-20210424015111208.png)
+![image-20210424015111208](https://github.com/lqnasa/dynamic-spring-controller/tree/master/docs/images/image-20210424015111208.png)
 
 ## 五、总结
 
