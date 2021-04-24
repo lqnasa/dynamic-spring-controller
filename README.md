@@ -297,6 +297,9 @@ private void registerControllerBeanDefinition(BeanDefinitionRegistry registry, C
 
 后期还可以针对byte-buddy强大的库，做更多的案例实践：如 基于JavaAgent的实现全链路监控（APM实现）
 
-github 参考 https://github.com/hiwepy/spring-bytebuddy
+源码地址：https://github.com/lqnasa/dynamic-spring-controller
+
+参考项目
+https://github.com/hiwepy/spring-bytebuddy
 
 
