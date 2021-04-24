@@ -299,7 +299,11 @@ private void registerControllerBeanDefinition(BeanDefinitionRegistry registry, C
 
 源码地址：https://github.com/lqnasa/dynamic-spring-controller
 
+参考官方文档
+https://bytebuddy.net
 参考项目
 https://github.com/hiwepy/spring-bytebuddy
+学习博客
+https://bugstack.cn/itstack-demo-agent/itstack-demo-agent.html
 
 
