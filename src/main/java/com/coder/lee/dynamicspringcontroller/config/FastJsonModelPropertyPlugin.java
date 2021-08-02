@@ -27,9 +27,9 @@ import static springfox.bean.validators.plugins.Validators.extractAnnotation;
  */
 @Component
 @Order(Validators.BEAN_VALIDATOR_PLUGIN_ORDER + 100)
-public class FastJsonModelPropertyBuilder implements ModelPropertyBuilderPlugin {
+public class FastJsonModelPropertyPlugin implements ModelPropertyBuilderPlugin {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(FastJsonModelPropertyBuilder.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(FastJsonModelPropertyPlugin.class);
 
     @Override
     public void apply(ModelPropertyContext context) {
