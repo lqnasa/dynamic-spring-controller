@@ -31,6 +31,8 @@ public class FastJsonModelPropertyPlugin implements ModelPropertyBuilderPlugin {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(FastJsonModelPropertyPlugin.class);
 
+    public static final String NAME = "name";
+
     @Override
     public void apply(ModelPropertyContext context) {
         Optional<JSONField> jsonField = extractAnnotation(context, JSONField.class);
@@ -40,7 +42,7 @@ public class FastJsonModelPropertyPlugin implements ModelPropertyBuilderPlugin {
             //PropertySpecificationBuilder name 设置为 final String 因此需要通过反射赋值
             PropertySpecificationBuilder specificationBuilder = context.getSpecificationBuilder().description(jsonFieldFromAnnotation);
             try {
-                Field field = specificationBuilder.getClass().getDeclaredField("name");
+                Field field = specificationBuilder.getClass().getDeclaredField(NAME);
                 field.setAccessible(true);
                 field.set(specificationBuilder, jsonFieldFromAnnotation);
             } catch (Exception e) {
