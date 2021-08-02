@@ -4,6 +4,8 @@ package com.coder.lee.dynamicspringcontroller.service.test.impl;
 import com.coder.lee.dynamicspringcontroller.service.test.SayAPI;
 import com.coder.lee.dynamicspringcontroller.service.test.Word;
 
+import javax.validation.constraints.NotBlank;
+
 /**
  * Description: Function Description
  * Copyright: Copyright (c)

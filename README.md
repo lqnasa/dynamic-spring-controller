@@ -280,6 +280,29 @@ private void registerControllerBeanDefinition(BeanDefinitionRegistry registry, C
 }
 ```
 
+7、补充，增加对使用fastJson作为项目序列化方式的处理。
+处理使用注解@JSONField，请求实体参数无法对应的问题。因为springfox-core中默认采用jackjson的序列化方式。
+解决方案实现ModelPropertyBuilderPlugin，通过反射赋值方式。具体实现类查看FastJsonModelPropertyBuilder。
+```java
+ @Override
+    public void apply(ModelPropertyContext context) {
+        Optional<JSONField> jsonField = extractAnnotation(context, JSONField.class);
+        String jsonFieldFromAnnotation = jsonField.map(JSONField::name).orElse(null);
+        if (StringUtils.hasText(jsonFieldFromAnnotation)) {
+            context.getBuilder().name(jsonFieldFromAnnotation).description(jsonFieldFromAnnotation);
+            //PropertySpecificationBuilder name 设置为 final String 因此需要通过反射赋值
+            PropertySpecificationBuilder specificationBuilder = context.getSpecificationBuilder().description(jsonFieldFromAnnotation);
+            try {
+                Field field = specificationBuilder.getClass().getDeclaredField("name");
+                field.setAccessible(true);
+                field.set(specificationBuilder, jsonFieldFromAnnotation);
+            } catch (Exception e) {
+                LOGGER.error("反射处理异常！", e);
+            }
+        }
+    }
+```
+
 实测效果：
 ![image](https://raw.githubusercontent.com/lqnasa/dynamic-spring-controller/master/docs/images/image-20210424014829852.png)
 

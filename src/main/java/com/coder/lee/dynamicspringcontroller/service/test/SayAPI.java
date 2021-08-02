@@ -10,7 +10,7 @@ package com.coder.lee.dynamicspringcontroller.service.test;
  */
 public interface SayAPI {
 
-    String say(String word);
+    String say(String wordStr);
 
     String say(Word word);
 
